@@ -16,9 +16,13 @@ class LoginForm extends React.Component {
     })
   }
 
+  handleSubmit = (event) => {
+    event.preventDefault()
+  }
+
   render() {
     return (
-      <form>
+      <form onSubmit={this.handleSubmit}>
         <div>
           <label>
             Username
