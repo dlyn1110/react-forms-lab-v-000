@@ -35,7 +35,7 @@ describe("<LoginForm />", () => {
       expect(
         isValueInState(wrapper.state(), "supersecret"),
         "The password input value is not being saved in the state"
-      ).to.be.true;
+      ).to.be.false;
     });
   });
 
